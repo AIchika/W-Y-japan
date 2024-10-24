@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社W&Y</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="kumo-container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+                <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img"></a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="藤巻教室.html">藤巻教室</a></li>
+                <li><a href="グローバル展開.html">グローバル展開</a></li>
+                <li><a href="会社について.html">会社について</a></li>
+                <li><a href="お問い合わせ.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="expansion">
+        <div class="global">
+            <div class="global-container">
+                <h1>グローバル展開</h1>
+                <p>教育と国境を越えたサービスを通じて視野を広げる</p>
+            </div>
+        </div>
+    
+        <main class="global-items">
+            <section>
+                <h2>私たちのグローバルサービス</h2>
+                <p>W&Y株式会社では、グローバルなつながりを促進し、国際的な成長と学びの機会を提供することに取り組んでいます。私たちのサービスは、文化の架け橋となり、新しい経験への扉を開きます。</p>
+            </section>
+    
+            <section class="service-grid">
+                <div class="service-card">
+                    <img src="images/lang fl.jpeg"
+                        alt="留学している学生">
+                    <div class="service-content">
+                        <h3>留学相談</h3>
+                        <p>私たちの専門コンサルタントが、プログラム選択から新しい学問環境への適応まで、留学の旅のあらゆるステップをサポートします。</p>
+                        <a href="お問い合わせ.html" class="cta1-button">詳しくはこちら</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/global.jpeg"
+                        alt="グローバルビジネス会議">
+                    <div class="service-content">
+                        <h3>越境Eコマース</h3>
+                        <p>国際的なビジネス運営、文化交流、グローバルパートナーシップを促進する包括的な越境サービスを提供します。</p>
+                        <a href="パートナ.html" class="cta1-button">サービスを見る</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/partner.webp"
+                        alt="言語交換セッション">
+                    <div class="service-content">
+                        <h3>言語交換プログラム</h3>
+                        <p>学生やプロフェッショナルのためにデザインされた、言語と文化に没入するための厳選された言語交換プログラムに参加しましょう。</p>
+                        <a href="言葉へ.html" class="cta1-button">プログラムを見る</a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="partner-schools">
+                <h2>世界中のパートナー校</h2>
+                <p>私たちは、世界中の名門機関と提携し、最高の国際教育の機会を提供しています。</p>
+                <ul class="school-list">
+                    <li><a href="https://www.blcu.edu.cn/" target="_blank" rel="noopener noreferrer">北京語言大学</a> - (中国)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+        <footer>
+            <div class="footer-container">
+                <ul class="footer-links">
+                    <li><a href="プライバシーポリシー.html">プライバシーポリシー</a></li>
+                    <li><a href="利用規約.html">利用規約</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img">
+            </div>
+            <div class="social-icons">
+                <a href="https://x.com/yourprofile" target="_blank" class="x-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://facebook.com/yourprofile" target="_blank" class="facebook-icon"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://yahoo.com/yourprofile" target="_blank" class="yahoo-icon"><i
+                        class="fab fa-yahoo"></i></a>
+                <a href="https://line.me/yourprofile" target="_blank" class="line-icon"><i class="fab fa-line"></i></a>
+            </div>
+
+            <p>&copy; 2024 株式会社W&Y. All rights reserved.</p>
+    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const subMenus = document.querySelectorAll('.has-submenu');
+
+            // Toggle hamburger menu
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show'); // Show/hide the menu
+            });
+
+            // Toggle submenus in mobile view
+            subMenus.forEach(menu => {
+                menu.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    menu.classList.toggle('active'); // Toggle active class to show submenu
+                });
+            });
+        });
+    </script>
+</body>

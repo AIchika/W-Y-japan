@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社W&Y</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="kumo-container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+                <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img"></a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="藤巻教室.html">藤巻教室</a></li>
+                <li><a href="グローバル展開.html">グローバル展開</a></li>
+                <li><a href="会社について.html">会社について</a></li>
+                <li><a href="お問い合わせ.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="contact-container">
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <h2>メッセージを送信する</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">件名</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button class="cta-button" type="submit">メッセージを送信</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>連絡先情報</h2>
+                <p><strong>住所:</strong>日本、新潟県上越市北城町3-9-20</p>
+                <p><strong>電話:</strong>+81 (0)25-123-4567</p>
+                <p><strong>メール:</strong>info@wandy.co.jp</p>
+                <p><strong>営業時間:</strong>月曜日 - 金曜日: 9:00 AM - 6:00 PM</p>
+                <div class="map-container">           
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25259.15653703764!2d138.2204657!3d37.1483851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff5a81b0f8beb7d%3A0x7c5aee5a4d8a7d0f!2sJoetsu%2C%20Niigata%2C%20Japan!5e0!3m2!1sen!2sus!4v1652345678901!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="プライバシーポリシー.html">プライバシーポリシー</a></li>
+                <li><a href="利用規約.html">利用規約</a></li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img">
+        </div>
+        <div class="social-icons">
+            <a href="https://x.com/yourprofile" target="_blank" class="x-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourprofile" target="_blank" class="facebook-icon"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://yahoo.com/yourprofile" target="_blank" class="yahoo-icon"><i class="fab fa-yahoo"></i></a>
+            <a href="https://line.me/yourprofile" target="_blank" class="line-icon"><i class="fab fa-line"></i></a>
+        </div>
+
+        <p>&copy; 2024 株式会社W&Y. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const subMenus = document.querySelectorAll('.has-submenu');
+
+            // Toggle hamburger menu
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show'); // Show/hide the menu
+            });
+
+            // Toggle submenus in mobile view
+            subMenus.forEach(menu => {
+                menu.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    menu.classList.toggle('active'); // Toggle active class to show submenu
+                });
+            });
+        });
+    </script>
+</body>

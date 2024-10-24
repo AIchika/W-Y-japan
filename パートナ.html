@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社W&Y</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="kumo-container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"></a>
+            <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img"></a>
+        </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="藤巻教室.html">藤巻教室</a></li>
+                <li><a href="グローバル展開.html">グローバル展開</a></li>
+                <li><a href="会社について.html">会社について</a></li>
+                <li><a href="お問い合わせ.html">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="partner-container">
+        <!-- 商標セクション -->
+        <div class="trademark-section">
+            <h1>私たちの商標</h1>
+            <div class="trademark-content">
+                <h2>商標登録の概要</h2>
+                <p><strong>商標名:</strong> Kedz Lendy</p>
+                <p><strong>登録番号:</strong> 5556552</p>
+                <p><strong>登録更新日:</strong> 2023年8月29日</p>
+                <p><strong>分類:</strong> 25</p>
+            </div>
+        </div>
+    
+        <!-- パートナーセクション -->
+        <div class="partners-section">
+            <h1>私たちのパートナー</h1><br>
+    
+            <!-- パートナー 1 -->
+            <div class="partner">
+                <h3>永旭石彫刻工場（遼寧省大連市）</h3>
+                <div class="partner-images">
+                    <img src="images/img_1101-1.jpg" alt="パートナー1の画像1">
+                    <img src="images/img_1100-j.jpg" alt="パートナー1の画像2">
+                    <img src="images/img_1117.webp" alt="パートナー1の画像3">
+                </div>
+            </div><br>
+    
+            <!-- パートナー 2 -->
+            <div class="partner">
+                <h3>中国風景画家、石永国</h3>
+                <div class="partner-images">
+                    <img src="images/86267c9ca5a4eff40e74875643c9e4ba-1.webp" alt="パートナー2の画像1">
+                    <img src="images/img_9016-1.jpg" alt="パートナー2の画像2">
+                    <img src="images/img_9018-1.webp" alt="パートナー2の画像3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="プライバシーポリシー.html">プライバシーポリシー</a></li>
+                <li><a href="利用規約.html">利用規約</a></li>
+            </ul>
+        </div>
+        <div class="logo-footer">
+            <img src="images/logo/logo.jpeg" alt="Logo" class="logo-img">
+        </div>
+        <div class="social-icons">
+            <a href="https://x.com/yourprofile" target="_blank" class="x-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com/yourprofile" target="_blank" class="facebook-icon"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://yahoo.com/yourprofile" target="_blank" class="yahoo-icon"><i class="fab fa-yahoo"></i></a>
+            <a href="https://line.me/yourprofile" target="_blank" class="line-icon"><i class="fab fa-line"></i></a>
+        </div>
+
+        <p>&copy; 2024 株式会社W&Y. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const subMenus = document.querySelectorAll('.has-submenu');
+
+            // Toggle hamburger menu
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('show'); // Show/hide the menu
+            });
+
+            // Toggle submenus in mobile view
+            subMenus.forEach(menu => {
+                menu.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default link behavior
+                    menu.classList.toggle('active'); // Toggle active class to show submenu
+                });
+            });
+        });
+    </script>
+</body>
